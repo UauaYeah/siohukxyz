@@ -14,21 +14,55 @@
     <title>
         抜けるエ口画像まとめ！
     </title>
-    
-    <script>
-        window.onload = function () {
-          var a1 = new Audio("https://cdn.discordapp.com/attachments/1048732011151495168/1074653606357246092/Eyyy.mp3");
-          a1.play();
-          a1.loop = true;
-        }
 
+    <script>
+        let p1 = 0;
+        function pl() {
+            if (p1 == 0) {
+                var sound = new Audio("https://cdn.discordapp.com/attachments/1037041333006782554/1074185094186676315/Eyyy.mp3");
+                sound.play();
+                sound.loop = true;
+                p1 += 1;
+            } else {
+                return
+            }
+        }
     </script>
 </head>
 
-<body>
+<body onclick="pl();">
     <div class="area">
-    <img src="http://um6bit.kikirara.jp/angel/opp/facebook/cat/semi2.gif" style="width:250%height:250%;display:flex;justify-content:center;>
+        <img src="http://um6bit.kikirara.jp/angel/opp/facebook/cat/semi2.gif"
+            style="width:80%;height:80%;display:flex;justify-content:center;">
     </div>
 </body>
 
 </html>
+
+<style>
+    body {
+        animation: l 0.05s infinite forwards;
+    }
+
+    @keyframes l {
+        20% {
+            background-color: red;
+        }
+
+        40% {
+            background-color: blue;
+        }
+
+        60% {
+            background-color: green;
+        }
+
+        80% {
+            background-color: yellow;
+        }
+
+        100% {
+            background-color: royalblue;
+        }
+    }
+</style>
